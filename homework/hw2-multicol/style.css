@@ -1,0 +1,46 @@
+/*
+font-family: 'Poppins', sans-erif;
+font-family: 'Abril Fatface', serif;
+*/
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 50px;
+  background-color: #FDDCCF;
+}
+
+p{
+  font-family: 'Poppins: 500', sans-serif;
+  text-align: center;
+  font-size: 20px;
+  color: #F9EAE7;
+}
+
+h1 {
+  font-family: 'Abril Fatface';
+  font-size: 48px;
+  text-align: center;
+  color: #FF956B;
+}
+
+.index section {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  grid-template-rows: 200px 200px 200px;
+  grid-gap: 30px;
+}
+
+.index div {
+  background-color: #FF956B;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom:10px;
+}
+
+.index .feature {
+  font-family: 'Poppins: 700', sans-serif;
+  font-size:30px;
+  color: white;
+  text-align:center;
+}
