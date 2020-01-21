@@ -1,0 +1,12 @@
+.square {
+	width: 20%;
+	display: block;
+	padding-top: 0px;
+  	margin-left: auto;
+  	margin-right: auto;
+  	animation-name: spinCircle;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
