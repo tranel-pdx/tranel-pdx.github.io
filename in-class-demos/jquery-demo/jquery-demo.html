@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .text {display:none;}
+
+    .jiggle {
+      background-color: pink;
+      width: 100px;
+      height: 100px;
+      display: inline-block;
+    }
+
+    .jiggler {
+      animation-name:jello;
+      animation-duration: 1s;
+    }
+
+    @keyframes jello {
+      0% { transform: rotate(20deg); }
+      25% { transform: rotate(-20deg); }
+      50% { transform: rotate(20deg); }
+      100% { transform: rotate(-20deg); }
+
+    }
+  </style>
+</head>
+<body>
+
+  <h1>JQuery Demo</h1>
+  <a href="#" class="buttonShow">Show Text</a>
+
+<div class="jiggle">Jiggle Me!</div>
+
+  <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    Est amet voluptatum magnam consequatur eum molestias et ipsum
+    voluptas ea ducimus doloribus possimus, sunt sapiente corrupti
+    qui consectetur optio necessitatibus officia odit aliquid iure!
+    Quidem fuga ullam amet, non quo nulla. </p>
+
+<script
+  src="http://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script>
+    $('.buttonShow').click(function(){
+      $('.text').css('display', 'block');
+    })
+    $('.jiggle').click(function(){
+      $('.jiggle').addClass('jiggler')
+    })
+  </script>
+</body>
+</html>
