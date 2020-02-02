@@ -47,16 +47,13 @@ h1 {
 
 p {
   display: block;
-  padding: 0;
+  background-color: red;
+  margin: 50%;
   text-align: left;
   font-family: 'EB Garamond', serif;
   font-size: 15px;
   font-weight: 400;
   color: white;
-  padding-top: 20px;
-  padding-right: 30px;
-  padding-left: 40px;
-  padding-bottom: 50px;
 }
 
 .grid-container {
