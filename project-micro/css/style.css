@@ -32,18 +32,6 @@ main {
   transition: transform .5s;
 }
 
-.nav-open main {
-  transform: scale(.8);
-}
-
-.intro {
-  height: 100vh;
-  width: 100%;
-  display: table;
-  background: #26292f url('../img/bg.jpg') no-repeat center center;
-  background-size: cover;
-}
-
 h1 {
   display: block;
   padding: 0;
@@ -91,6 +79,7 @@ ul {
   line-height: 24px;
 }
 
+/* Grid System index */
 .grid-container {
   padding-top: 40px;
   padding-left: 40px;
@@ -110,6 +99,20 @@ ul {
  font-weight: 300;
  color: white;
  text-align: center;
+}
+
+/* Navigation Menu and Page State*/
+
+.nav-open main {
+  transform: scale(.8);
+}
+
+.intro {
+  height: 100vh;
+  width: 100%;
+  display: table;
+  background: #26292f url('../img/bg.jpg') no-repeat center center;
+  background-size: cover;
 }
 
 .nav-trigger {
@@ -276,18 +279,7 @@ ul {
   animation-delay: .6s;
 }
 
-@keyframes slide-in {
-  0% {
-    opacity: 0;
-    transform: translateX(80px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
+/* Resources Animations/Styles */
 
 .gallery-section{
   width: 100%;
@@ -300,7 +292,6 @@ ul {
   margin: auto;
   padding: 0 20px;
 }
-
 
 .border{
   width: 180px;
@@ -329,6 +320,18 @@ ul {
 
 .gallery-section .image:hover img{
   transform: scale(1.4) rotate(15deg);
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateX(80px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 @media screen and (max-width:960px) {
