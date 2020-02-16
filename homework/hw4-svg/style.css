@@ -1,6 +1,7 @@
 svg{
     transform-origin:50% 50%;
     animation:15s rotateRight infinite linear;
+    margin: 5%;
 }
 
 body{
