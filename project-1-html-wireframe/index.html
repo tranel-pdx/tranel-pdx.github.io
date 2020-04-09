@@ -8,19 +8,42 @@
   <link rel="stylesheet" href="css/style.css">
   <title>project-1-html-wireframe</title>
 </head>
+<style>
+
+  #content{
+    display: grid;
+  /*grid-template-columns: 33.3% 33.3% 33.3%*/
+  /*grid-template-columns: repeat(3, 1fr)*/
+  /*grid-template-columns: 1fr 1fr 1fr*/
+    grid-template-columns: repeat(6, 1fr);
+  /*grid-template-rows:repeat(4,minmax(150px, auto))*/
+    grid-auto-rows: minmax(150px, auto);
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  #content > *{
+    padding: 10px;
+  }
+</style>
 <body>
-  <header>Logo</header>
-  <nav>link</nav>
-  <main>
-    <div class="artist-image-content">
-      <h1>The Shepherd Boy <br>& the Wolf</h1>
-      <div class="img-index"></div>
 
-      <div class="button-next">
-        <div><a href="#" class="button">read the story</a></div>
-      </div>
+  <div id="content">
 
-    </div>
-  </main>
+  		<header>Header</header>
+
+      <section class="image-2"> insert illustration</section>
+
+      <blockquote-1>blockquote-1</blockquote-1>
+
+      <blockquote-2>blockquote-2</blockquote-2>
+
+      <blockquote-3>blockquote-3</blockquote-3>
+
+      <button-1>next</button-1>
+
+
+
+  	</div>
+
 </body>
 </html>
