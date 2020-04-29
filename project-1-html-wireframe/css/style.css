@@ -15,7 +15,7 @@
     color: black;
     font-family: 'Lora', serif;
     font-size: 16pt;
-    background-image: image("images/paper-texture.jpg")
+    background-image: image(images/paper-texture.jpg);
 
   }
 
