@@ -1,0 +1,99 @@
+* {
+
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Jost', sans-serif;
+}
+
+
+header {
+  display: flex;
+  width: 95%;
+  align-items: center;
+  margin: auto;
+  margin-top: 2%;
+}
+
+.logo-container, .nav-links, .cart {
+  display:flex;
+}
+
+.logo-container {
+  flex: .5;
+
+}
+
+nav{
+  flex: 2;
+}
+
+.nav-links{
+  justify-content: space-around;
+  list-style: none;
+}
+
+.nav-link{
+  color: #5F5f79;
+  font-size:18px;
+  text-decoration: none;
+}
+
+.cart{
+  background; black;
+  flex: .15;
+  justify-content:flex-end;
+}
+
+.hero{
+  display: flex;
+  margin: auto;
+  min-height: 80vh;
+  align-items: center;
+}
+
+,introduction{
+  background: lightblue;
+  flex:1;
+}
+
+.intro-text h1{
+  font-family: 'Righteous', cursive;
+  font-size:30px;
+  /*
+  background: linear-gradient(to right, #494964, #6f6f89)
+  -webkit-background-clip: text;
+  -webkit-text-fill-color:transparent;
+  */
+}
+.cover img{
+  height: 60vh;
+  flex: 1;
+}
+
+.sauces{
+  margin-left: 10%;
+  margin-top: 5%;
+  margin-bottom:5%;
+}
+/*INSERT PHOTO; might have to alter this to an ID*/
+.sauce_item{
+  width:300px;
+  height: 400px;
+  background-color: red;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../images/cat.jpg)
+}
+
+.sauce_item:hover{
+  font-size: 0;
+}
+
+.sauce_item:hover:after{
+  content: attr(data-hover);
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 200px;
+}
