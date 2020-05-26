@@ -22,6 +22,10 @@ main {
   margin: 15px 50px 15px 50px;
 }
 
+p {
+  font-size:22px;
+}
+
 .logo-container, .nav-links, .cart {
   display:flex;
 }
@@ -80,17 +84,40 @@ nav{
 
 .cta-select{
   border-radius: 15px;
-  background: #c36cbb;
+  background: #E37428;
   color: #fff;
-  width: 150px;
+  width: 200px;
   height: 50px;
   cursor: pointer;
   font-size: 16px;
+  letter-spacing:2px;
+  font-weight:600;
 }
 
 .cover img{
   height: 60vh;
   flex: 1;
+}
+
+/*locations*/
+.locations{
+  margin-top: 200px;
+  margin-bottom:200px;
+}
+
+.button-location {
+  display: block;
+  margin-bottom:20px;
+  margin-top: 20px;
+  width:500px;
+  height: 75px;
+  border-radius:15px;
+  background: #2D2C2A;
+  font-size: 30px;
+  letter-spacing: 5px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
 }
 
 /*sauce scroll*/
@@ -102,7 +129,8 @@ nav{
 }
 
 .container-sauces img {
-    margin-right: 20px;
+    margin-right: 60px;
+    height: 80%;
 }
 
 .container-sauces::-webkit-scrollbar {
