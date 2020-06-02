@@ -9,6 +9,15 @@ body {
 button{
   font-family: 'Jost', sans-serif;
 }
+h1{
+  font-family: 'Righteous', sans-serif;
+  font-size:40px;
+}
+
+h4{
+  font-family: 'Righteous', sans-serif;
+  font-size:60px;
+}
 
 header {
   display: flex;
@@ -101,8 +110,20 @@ nav{
 
 /*locations*/
 .locations{
-  margin-top: 200px;
-  margin-bottom:200px;
+  display: flex;
+  margin: auto;
+  min-height: 80vh;
+  align-items: flex-end;
+}
+
+.locations-about{
+  align-items: flex-end;
+}
+
+.locations-buttons{
+  flex:1;
+  padding: 0px 40px 0px 0px;
+  align-items: flex-end;
 }
 
 .button-location {
