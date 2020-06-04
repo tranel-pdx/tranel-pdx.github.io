@@ -183,4 +183,16 @@ search drop down menu in his tuts https://www.youtube.com/watch?v=ZeDP-rzOnAA
   .cta{
     padding: 5px 0px 10px 0px;
   }
+  .locations{
+    flex-direction: column;
+  }
+  .locations-about{
+    text-align: center;
+    align-items: flex-end;
+  }
+  .locations-buttons{
+    flex-direction: column;
+
+    align-items: flex-end;
+  }
 }
