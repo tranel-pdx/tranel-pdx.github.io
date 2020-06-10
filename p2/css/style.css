@@ -207,7 +207,8 @@ a:hover{
 
 /*locations*/
 .locations{
-  margin: 20px;
+  margin-top:0px;
+  margin-bottom: 30px;
   display: flex;
   align-content: space-between;
   justify-content: space-around;
@@ -219,19 +220,20 @@ a:hover{
 }
 
 /*sauce scroll*/
-.container-sauces {
+.container-shop {
+  margin-top: 0px;
   display: flex;
   overflow-x: auto;
   align-items: center;
   height: 100vh;
 }
 
-.container-sauces img {
+.container-shop img {
     margin-right: 60px;
     height: 80%;
 }
 
-.container-sauces::-webkit-scrollbar {
+.container-shop::-webkit-scrollbar {
     display: none;
 }
 
@@ -275,7 +277,7 @@ search drop down menu in his tuts https://www.youtube.com/watch?v=ZeDP-rzOnAA
 }
 
 /*test-wave*/
-.ocean {
+.sauce-ocean {
   z-index:-1;
   height: 100%;
   width:100%;
