@@ -32,6 +32,7 @@ p {
   line-height:28px;
 }
 
+/*nav-bar*/
 .nav-bar{
   display: flex;
 }
@@ -40,16 +41,14 @@ p {
 float: right;
 margin-left: 20px;
 flex: 1;
-align-items: flex-end;
-
+justify-content: space-around;
 }
 
 .logo{
   height:15vh;
 }
 
-
-/*nav menu*/
+/*nav pop-out*/
 .btn{
   position: sticky;
   z-index: 1;
@@ -166,25 +165,15 @@ nav ul li a span.rotate{
   transform: translateY(-50%) rotate(-180deg);
 }
 ]
-/*end nav menu*/
 
-
-.hero{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.introduction{
-  flex:1;
-}
-
+/*HERO*/
 .cta {
-  padding: 20px;
+  display:flex;
+  align-content: center;
+  justify-content: center;
 }
 
-.cta-select{
+#cta-select{
   border-radius: 15px;
   background: #E37428;
   color: #fff;
@@ -197,15 +186,33 @@ nav ul li a span.rotate{
   border: none;
 }
 
-.cover {
-  flex: 1;
+.some-page-wrapper {
+  margin: 15px;
+  background-color: red;
 }
 
-.cover img{
-  height: 60vh;
-  margin: 20px;
-  align-items: center;
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
   flex: 1;
+  padding: 20px;
+}
+
+.column-one {
+  height: 100%;
+}
+
+.column-two {
+  height: 100%;
 }
 
 /*locations*/
@@ -322,11 +329,13 @@ nav ul li a span.rotate{
   h1{
     font-family: 'Righteous', sans-serif;
     font-size:24px;
+    text-align: center;
   }
 
   p{
     font-size: 18px;
     line-height:24px;
+    text-align: center;
   }
 
   .hero{
@@ -350,12 +359,9 @@ nav ul li a span.rotate{
   .cta{
     padding: 5px 0px 10px 0px;
     align-items: center;
-  }
-  .cover img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
+}
+
+
   .locations{
     flex-direction: column;
     align-items: center;
