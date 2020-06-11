@@ -12,20 +12,16 @@ button{
 h1{
   font-family: 'Righteous', sans-serif;
   font-size:40px;
+  line-height:42px;
+  margin-bottom: 5px;
 }
 
 h4{
   font-family: 'Righteous', sans-serif;
   font-size:60px;
+  margin-bottom: 20px;
 }
 
-header {
-  display: flex;
-  width: 95%;
-  align-items: center;
-  margin: auto;
-  margin-top: 2%;
-}
 
 main {
   margin: 15px 50px 15px 50px;
@@ -33,40 +29,34 @@ main {
 
 p {
   font-size:22px;
+  line-height:28px;
 }
 
-.nav-bar {
+.nav-bar{
   display: flex;
-  justify-content: space-between;
 }
 
 .logo-container {
-  flex: 1;
-  justify-content: flex-end;
+float: right;
+margin-left: 20px;
+flex: 1;
+align-items: flex-end;
+
 }
 
 .logo{
-  height:20vh;
+  height:15vh;
 }
 
-nav{
-  flex: 1;
-  background-color: blue;
-  justify-content: flex-end;
-}
 
-.nav-menu{
-  height: 10vh;
-
-}
-
-/**/
+/*nav menu*/
 .btn{
-  position: absolute;
-  top: 15px;
-  left: 45px;
-  height: 45px;
-  width: 45px;
+  position: sticky;
+  z-index: 1;
+  top: 10px;
+  left: 10px;
+  height: 60px;
+  width: 60px;
   text-align: center;
   background: #443790;
   border-radius: 3px;
@@ -79,7 +69,7 @@ nav{
 .btn span{
   color: white;
   font-size: 28px;
-  line-height: 45px;
+  line-height: 60px;
 }
 .btn.click span:before{
   content: '\f00d';
@@ -117,24 +107,24 @@ nav ul li{
 nav ul li:last-child{
   border-bottom: 1px solid rgba(255,255,255,0.05);
 }
+
 nav ul li a{
   position: relative;
   color: white;
   text-decoration: none;
   font-size: 18px;
-  padding-left: 40px;
+  padding-left: 20px;
   font-weight: 500;
   display: block;
   width: 100%;
-  border-left: 3px solid transparent;
 }
 nav ul li.active a{
-  color: white;
-  background: #f08a3e;
+  color: #F08A3E;
   border-left-color: none;
 }
 nav ul li a:hover{
-  background: #1e1e1e;
+  background: #F08A3E;
+  color: white;
 }
 nav ul ul{
   position: static;
@@ -161,7 +151,7 @@ nav ul li.active ul li a{
   border-left-color: transparent;
 }
 nav ul ul li a:hover{
-  color: cyan!important;
+  color: white!important;
   background: #1e1e1e!important;
 }
 nav ul li a span{
@@ -176,29 +166,22 @@ nav ul li a span.rotate{
   transform: translateY(-50%) rotate(-180deg);
 }
 ]
-/*end test*/
+/*end nav menu*/
 
 
 .hero{
   display: flex;
-  justify-content: space-between;
-  margin: auto;
-  min-height: 80vh;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
 }
 
 .introduction{
   flex:1;
-  padding: 0px 20px 0px 0px;
-}
-
-.intro-text h1{
-  font-family: 'Righteous', sans-serif;
-  font-size:40px;
 }
 
 .cta {
-  padding: 50px 0px 0px 0px;
+  padding: 20px;
 }
 
 .cta-select{
@@ -211,6 +194,11 @@ nav ul li a span.rotate{
   font-size: 16px;
   letter-spacing:2px;
   font-weight:600;
+  border: none;
+}
+
+.cover {
+  flex: 1;
 }
 
 .cover img{
@@ -245,16 +233,11 @@ nav ul li a span.rotate{
 
 .container-shop img {
     margin-right: 60px;
-    height: 80%;
+    drop-shadow: 0px 5px 3px black ;
 }
 
 .container-shop::-webkit-scrollbar {
     display: none;
-}
-
-.container-card {
-  height: 50%;
-  drop-shadow(0px 5px 3px black);
 }
 
 /*rotate*/
@@ -306,6 +289,7 @@ nav ul li a span.rotate{
   opacity: 1;
 }
 
+
 @keyframes wave {
   0% {
     margin-left: 0;
@@ -331,11 +315,28 @@ nav ul li a span.rotate{
 
   h4{
     text-align: center;
+    line-height: 38px;
+    font-size:36px;
+  }
+
+  h1{
+    font-family: 'Righteous', sans-serif;
+    font-size:24px;
+  }
+
+  p{
+    font-size: 18px;
+    line-height:24px;
   }
 
   .hero{
     flex-direction:column;
+    align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
+
   .introduction{
     margin-top:5vh;
     text-align: center;
@@ -348,6 +349,12 @@ nav ul li a span.rotate{
   }
   .cta{
     padding: 5px 0px 10px 0px;
+    align-items: center;
+  }
+  .cover img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
   .locations{
     flex-direction: column;
