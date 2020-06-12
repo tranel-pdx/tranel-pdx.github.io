@@ -18,8 +18,8 @@ h1{
 
 h4{
   font-family: 'Righteous', sans-serif;
-  font-size:60px;
-  margin-bottom: 20px;
+  font-size:55px;
+  margin-bottom: 10px;
 }
 
 
@@ -215,6 +215,14 @@ nav ul li a span.rotate{
   height: 100%;
 }
 
+#hero-image {
+  top: 45%;
+  position: absolute;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*locations*/
 .locations{
   margin-top:0px;
@@ -227,6 +235,15 @@ nav ul li a span.rotate{
 
 .locations-card{
     align-items: center;
+}
+
+.photo{
+  height: 50vh;
+  width: 70vh;
+  padding: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*sauce scroll*/
@@ -332,18 +349,30 @@ nav ul li a span.rotate{
     text-align: center;
   }
 
+  h2, h5{
+    font-size:24px;
+    line-height:28px;
+    text-align: center;
+  }
+
   p{
     font-size: 18px;
     line-height:24px;
     text-align: center;
   }
 
-  .hero{
-    flex-direction:column;
-    align-items: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  .column {
+    flex: 1
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+  .some-page-wrapper {
+    flex: 1;
   }
 
   .introduction{
@@ -358,9 +387,16 @@ nav ul li a span.rotate{
   }
   .cta{
     padding: 5px 0px 10px 0px;
-    align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+#hero-image {
+  top: 20px;
+  position: relative;
+  align-items: center;
+}
 
   .locations{
     flex-direction: column;
